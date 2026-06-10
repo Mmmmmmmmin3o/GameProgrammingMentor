@@ -1,49 +1,46 @@
-using System.CodeDom.Compiler;
 using UnityEngine;
 
 public class GridManager : MonoBehaviour
 {
-    
-    public Element CloneBlock = null;
+    public Element CloneTile = null;
 
     public int WidthBlock = 10;
     public int HeightBlock = 13;
 
-    public Element[,] ElementArray = null; // new Element[WidthBlock, HeighrBlock];
-
+    public Element[,] ElementArray = null;
 
     void Awake()
     {
         ElementArray = new Element[WidthBlock, HeightBlock];
     }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    
+
     void GenaratorMineSweeper()
     {
         GameObject copyobj = null;
         Vector3 temppos = Vector3.zero;
-        for(int yy=0; yy< HeightBlock; ++yy)
+
+        // 프리팹의 실제 월드 크기 가져오기
+        float tileWidth = CloneTile.GetComponent<SpriteRenderer>().bounds.size.x;
+        float tileHeight = CloneTile.GetComponent<SpriteRenderer>().bounds.size.y;
+
+        for (int yy = 0; yy < HeightBlock; ++yy)
         {
-            for(int xx=0; xx< WidthBlock; ++xx)
+            for (int xx = 0; xx < WidthBlock; ++xx)
             {
-                copyobj = GameObject.Instantiate(CloneBlock.gameObject);
+                copyobj = GameObject.Instantiate(CloneTile.gameObject);
                 copyobj.transform.SetParent(this.transform);
-                temppos.Set(xx, yy, 0);
+
+                // 타일 크기만큼 곱해주기
+                temppos.Set(xx * tileWidth, yy * tileHeight, 0);
                 copyobj.transform.localPosition = temppos;
-                copyobj.name = "CloneBlock_" + xx.ToString() + "_" + yy.ToString();
+
+                copyobj.name = "CloneTile_" + xx.ToString() + "_" + yy.ToString();
             }
         }
-
-
     }
+
     void Start()
     {
         GenaratorMineSweeper();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
