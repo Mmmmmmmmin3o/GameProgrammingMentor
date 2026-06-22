@@ -1677,7 +1677,7 @@ GameObject:
   - component: {fileID: 550516001}
   - component: {fileID: 550516000}
   m_Layer: 5
-  m_Name: Image
+  m_Name: STAMINA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1987,6 +1987,11 @@ MonoBehaviour:
   walkSpeed: 2
   runSpeed: 4
   cameraTransform: {fileID: 2096362196}
+  maxStamina: 100
+  stamina: 0
+  staminaDecreaseRate: 20
+  staminaRecoveryRate: 10
+  staminaBar: {fileID: 550515999}
 --- !u!143 &1045914355
 CharacterController:
   m_ObjectHideFlags: 0
@@ -2604,6 +2609,7 @@ MonoBehaviour:
   player: {fileID: 1045914353}
   chaseDistance: 10
   stopDistance: 15
+  targetSceneName: "\uC9C0\uB8B0\uCC3E\uAE30"
 --- !u!1 &2096362193
 GameObject:
   m_ObjectHideFlags: 0
