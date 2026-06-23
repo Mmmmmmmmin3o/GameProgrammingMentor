@@ -8,6 +8,10 @@ TagManager:
   - Key
   - ItemEffect
   - Enemy
+  - Deck
+  - Top
+  - Bottom
+  - Card
   layers:
   - Default
   - TransparentFX
@@ -15,7 +19,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Poker
   - 
   - 
   - 

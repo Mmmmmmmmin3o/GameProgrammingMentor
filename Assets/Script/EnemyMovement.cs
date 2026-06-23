@@ -12,7 +12,7 @@ public class EnemyMovement : MonoBehaviour
 
     public int randomMap = 0;
 
-    public string targetSceneName="지뢰찾기"; // 이동할 씬 이름
+    public string targetSceneName; // 이동할 씬 이름
 
     void Start()
     {
@@ -39,7 +39,7 @@ public class EnemyMovement : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            /*
+            
             randomMap = Random.Range(1, 3); // 0, 1, 2 중 하나를 랜덤으로 선택
 
             if(randomMap == 1)
@@ -50,7 +50,6 @@ public class EnemyMovement : MonoBehaviour
             {
                 targetSceneName = "솔리테어"; // 씬 이름 설정
             }
-            */
             // 플레이어와 충돌 시 씬 전환
             SceneManager.LoadScene(targetSceneName);
         }

@@ -2609,6 +2609,7 @@ MonoBehaviour:
   player: {fileID: 1045914353}
   chaseDistance: 10
   stopDistance: 15
+  randomMap: 0
   targetSceneName: "\uC9C0\uB8B0\uCC3E\uAE30"
 --- !u!1 &2096362193
 GameObject:
