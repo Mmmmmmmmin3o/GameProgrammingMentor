@@ -2,10 +2,11 @@ using UnityEngine;
 
 public class NewMonoBehaviourScript : MonoBehaviour
 {
+    private Solitaire solitaire;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        solitaire = FindFirstObjectByType<Solitaire>();
     }
 
     // Update is called once per frame
@@ -44,18 +45,15 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
     void Deck()
     {
-        print("clicked deck");
+        solitaire.DealFromDeck();
     }
     void Card()
     {
-        print("clicked card");
     }
     void Top()
     {
-        print("clicked top");
     }
     void Bottom()
     {
-        print("clicked bottom");
     }
 }

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 15b720b429a176f4e96eb63d230ccc28
+guid: 459137ef704ac674ea64f8afe7ebaf8f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -108,56 +108,12 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Blue_0
-      rect:
-        serializedVersion: 2
-        x: 5
-        y: 48
-        width: 37
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3b8f607a11994a44a905e0604aa94523
-      internalID: -663202848
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Blue_1
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 1
-        width: 59
-        height: 91
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 303e42e06ec544f4cb0db621a4144ec2
-      internalID: -1756953737
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 805446022f295c04e8ca93a2adae3339
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -166,9 +122,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Blue_0: -663202848
-      Blue_1: -1756953737
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

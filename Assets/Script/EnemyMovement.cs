@@ -40,13 +40,13 @@ public class EnemyMovement : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             
-            randomMap = Random.Range(1, 3); // 0, 1, 2 중 하나를 랜덤으로 선택
+            randomMap = Random.Range(1,11); // 10까지 무작위 선택
 
-            if(randomMap == 1)
+            if(randomMap%2==0)
             {
                 targetSceneName = "지뢰찾기"; // 씬 이름 설정
             }
-            else if(randomMap == 2)
+            else if(randomMap%2!=0)
             {
                 targetSceneName = "솔리테어"; // 씬 이름 설정
             }

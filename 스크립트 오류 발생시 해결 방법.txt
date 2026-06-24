@@ -1,0 +1,60 @@
+스프라이트가 사라져 작동하지 않는 경우
+
+1. 첨부된 이미지 파일 사용하여 이미지 재 로드
+2. 이미지 로드 후 스프라이트 생성
+3. 기존 스프라이트 있던 곳에 다시 채우기
+
+자세한 해결 방법은 아래 내용을 참고한다.
+------------------------------------------------
+<지뢰찾기 설정>
+
+"Tile to Sprites"
+
+Texture Type : Sprite(2D and UI)
+
+Pixels Per Unit : 16
+
+Apply
+
+
+"Tile"
+
+Change Sprite Array : 
+
+Element0 -> TileEmpty
+Element1 -> Tile1
+Element2 -> Tile2
+Element3 -> Tile3
+Element4 -> Tile4
+Element5 -> Tile5
+Element6 -> Tile6
+Element7 -> Tile7
+Element8 -> Tile8
+
+"GridManager"
+
+Clone Tile : Tile Prefabs
+
+
+-------------------------------------------
+
+<솔리테어 설정>
+
+"Poker to Sprites"
+
+Texture Type : Sprite(2D and UI)
+
+Apply
+
+"Card"
+
+Update Sprite : Card Back -> Blue
+
+"Solitaire Game"
+
+Solitaire : Card Faces
+
+Element 0~ Element 51 (Clubs, Diamonds, Hearts, Spades) 순차적으로 삽입
+
+Ace>1>2>3>4>5>6>7>8>9>10>Jack>Queen>King
+
